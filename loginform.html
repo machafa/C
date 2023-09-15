@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LOGIN FORM VALIDATION</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Montserrat"/>
+    </head>
+    <style>
+        .corpo{
+            font-family:'Montserrat', serif;
+            font-size: 30px;
+            margin-top:300px;
+            background-color: rgb(181, 135, 19); 
+            width: 500px;
+            height: 400px;
+            border-radius:20px;
+            margin-left:300px;
+            text-align: center;
+        }
+        .inputo{
+             width: 130px;
+             height: 50px;
+             margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+            transition: width .4s ease-in-out;
+        }
+        .inputo:focus{
+            width: 300px;
+        }
+        h2{
+            text-decoration: underline;
+            text-shadow: rgba();
+        }
+        .butto{
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            text-transform: uppercase;
+            font-size: 15px;
+        }
+    </style>
+    <body >
+        <div class="corpo">
+            
+        <center>
+            <h2 style="padding-top: 50px">LOGIN FROM</h2>
+        <form method="post" onsubmit="validation()">
+            <input type="text" id="uname" placeholder="Username" class="inputo"><br>
+            <input type="password" id="pswd" placeholder="Password" class="inputo"><br>
+            <input type="submit" value="Submit" id="sub" class="butto">
+        </form>
+        <script>
+            function validation(){
+                var un=document.getElementById('uname').value;
+                var ps=document.getElementById('pswd').value;
+                if (un == "relicom" && ps == "relicom@123"){
+                    window.alert("Login Successful");
+                }
+                else{
+                    window.alert("Login Failed");
+                }
+            }
+        </script>
+        </center>
+        </div>
+
+        
+    </body>
+</html>
