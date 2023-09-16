@@ -1,1 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"/>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    
+   
+.input {
+  height: 30px;
+  border-radius: 10px;
+}
+.btn {
+  color: white;
+  margin-left: 5px;
+  background-color: rgb(135, 135, 235);
+  border: 0px;
+  border-radius: 10px;
+  height: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  
+  
+}
+
+
+body{
+  font-family:'Montserrat', serif;
+      font-size: 15px;
+}
+.teste{
+  border-radius: 10px;
+  background-color: rgb(255,82,82);
+  border-width: 600px;
+}
+#id1{
+  text-transform: uppercase;
+  height: 30px;
+}
+
+#id2{
+  text-transform: capitalize;
+  height: 30px;
+}
+
+  </style>
+  <title>ReliCom</title>
+</head>
+
+<body >
+</script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+    
+</script>
+
+</head>
+ <center>
+  <input type="text"id="id1" placeholder="name" required/>
+  <input type="text"id="id2" placeholder="what's on your mind?" required/>
+  <button onclick="appendText()" class="btn">POST</button><hr>
+</cdnter>
+  <div style="width: 700px; text-align: center;"></div>
+
+  
+
+
+<script>
+var soma=0;
+function appendText() {
+  var txt1 =$('#id1').val();        // Create text with HTML
+  var txt2=$('#id2').val();
+ const d = new Date();
+//document.getElementById("demo").innerHTML = d;
+  
+  $("div").append("<p class='teste'><b>"+txt1+"</b><br>"+txt2+"</p>");   // Append new elements
+  
+}
+</script>
+</body>
+
+</html>
 
